@@ -135,9 +135,18 @@ body {
 
 @media (min-width: 768px) {
 
-.navbar-toggler {visibility: hidden;}
-
+.navbar-toggler {
+  visibility: hidden;
 }
+.navbar-nav {
+  visibility: hidden;
+}
+
+#navbarCollapse {
+  height: 10px;
+}
+}
+
 
 /** END HOME PAGE **/
 /*
