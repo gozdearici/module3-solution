@@ -1,8 +1,8 @@
 /********** Base styles **********/
 body {
   font-size: 16px;
-  color: #fff;
-  background-color: #61122f;
+  color: #343A40;
+  background-color: #343A40;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -12,31 +12,135 @@ body {
   border: 0;
 }
 
-.navbar-brand a { /* Restaurant name */
-  font-family: 'Lora', serif;
-  color: #557c3e;
-  font-size: 1.5em;
+.navbar {
+  background-color: #ddeeff;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Oxygen', serif;
+  color: #343A40;
+  font-size: 1.3em;
   text-transform: uppercase;
-  font-weight: bolder;
   text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
+  margin-top: 15px;
   margin-bottom: 0;
-  line-height: .75;
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+#header-nav button {
+    margin-top: 22px;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fce29e;
+}
+
+.navbar-collapse {
+    border-top: 0;
+}
+
+.navbar-brand, .navbar-nav li a {
+    line-height: 76px;
+    height: 76px;
+    padding-top: 0;
+}
+
+
+.navbar-brand h1 {
+    color: #343A40;
+    font-family: 'Oxygen', cursive;
+    font-weight: bolder;
+    font-size: 1.8em;
+
+}
+
+.navbar-brand a:hover {
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fe9797;
+    text-align:center;
+}
+
+#nav-item {
+    background-color: #e4af34;
+    text-align:center;
+}
+
+#nav-item a {
+    font-weight: bolder;
+    color: #282828;
+    font-size: 1.2em;
+    text-align:center;
+}
+
+#nav-item a:hover {
+    color: #202020;
+    background-color: #fce29e;
+}
+
+.navbar-header button.navbar-toggler, .navbar-header .icon-bar {
   border: 1px solid #61122f;
 }
-.navbar-header button.navbar-toggle {
+.navbar-header button.navbar-toggler {
   clear: both;
   margin-top: -30px;
 }
 
+.navbar-nav .nav-link {
+  font-family: 'Oxygen', cursive;
+  text-align: center;
+  border: 1px solid #61122f;
+  font-weight: bold;
+}
 
+
+
+/* Home Page */
+#main-content {
+    width: 92%;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+#main-content h2 {
+    font-size: 2.3em;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#main-content h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#main-section {
+    background-color: #ddeeff;
+    box-shadow: 0 0 50px #000000;
+    padding: 30px;
+    font-weight: bold;
+}
+
+#top-heading {
+  color: #ddeeff;
+  font-size: 10px;
+}
+
+@media (min-width: 768px) {
+
+.navbar-toggler {visibility: hidden;}
+
+}
+
+/** END HOME PAGE **/
+/*
 * {
   box-sizing: inherit;
 }
@@ -84,23 +188,23 @@ h1 {
 }
 
 
-/* Simple Responsive Framework.*/ 
+/* Simple Responsive Framework. 
 .row {
   width: 100%;
   padding: 0 10px;
 }
+*/
 
-
-/********** Small devices **********/
+/********** Small devices *********
 @media (max-width: 767px) {
   .col-sm-12 {
     float: left;
     width: 100%;
   }
 }
+*/
 
-
-/********** Medium devices **********/
+/********** Medium devices *********
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
@@ -155,7 +259,7 @@ h1 {
   }
 }
 
-/********** Large devices **********/
+/********** Large devices *********
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
@@ -210,8 +314,8 @@ h1 {
   }
 }
 
-/********** Helpers **********/
+/********** Helpers *********
 .clear {
   clear: both;
 }
-
+*/
